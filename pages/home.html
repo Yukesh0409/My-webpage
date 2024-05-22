@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yukesh-Home</title>
+    <link rel="icon" type="image/jpeg" href="../assets/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var contactButton = document.getElementById('contact-button');
+          if (contactButton) {
+              contactButton.addEventListener('click', function(event) {
+                  event.preventDefault();
+                  var contactDetails = document.getElementById('contact-details');
+                  if (contactDetails) {
+                      contactDetails.scrollIntoView({ behavior: 'smooth' });
+                  }
+              });
+          }
+      });
+  </script> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            // Fade out loading screen
+            var loadingScreen = document.getElementById('loading-screen');
+            loadingScreen.classList.add('fade-out');
+
+            // Show content
+            var content = document.getElementById('content');
+            content.classList.remove('hidden');
+            console.log("setting -1")
+            // Set z-index of loading screen to -1 after fade-out animation completes
+            setTimeout(function() {
+                loadingScreen.style.zIndex = '-1';
+            }, 1000); // Adjust the timeout as needed based on the duration of the fade-out animation
+        }, 3000);
+
+
+        var contactButton = document.getElementById('contact-button');
+        if (contactButton) {
+            contactButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                var contactDetails = document.getElementById('contact-details');
+                if (contactDetails) {
+                    contactDetails.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        }
+
+        var contactButton = document.getElementById('contact-button1');
+        if (contactButton) {
+            contactButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                var contactDetails = document.getElementById('contact-details');
+                if (contactDetails) {
+                    contactDetails.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        }
+
+        var backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    });
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+<div id="loading-screen">
+  <div class="loading-content">
+      <img src="loading.gif" alt="Loading GIF">
+      <div class="loading-text">Wait a sec, loading...</div>
+  </div>
+</div>
+  
+    <div id="content" class="home" class="hidden">
+      <div class="navigation">
+        <div class="container-2">
+          <a href="home.html">
+            <span class="yukesh-1">
+            Yukesh A S
+            </span>
+          </a>
+          <div class="column">
+            <a href="home.html">
+              <span class="link">
+              Work
+              </span>
+            </a>
+            <a href="about.html">
+              <span class="link-1">
+              About
+              </span>
+            </a>
+            <a href="#contact-details" id="contact-button">
+              <span class="link-2">
+              Contact
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container-1">
+        <div class="hero-content">
+          <div class="header-and-sub-header">
+            <div class="hi-iam-yukesh">
+            hi, i am <br />
+            yukesh.
+            </div>
+            <span class="one-line-desc">
+              A data engineer experienced in building data transformation solutions for diverse data sources.
+            </span>
+          </div>
+          <div class="action">
+            <a id="contact-button1" href="#contact-details">
+              <div class="button-1">
+                <span class="title-13">
+                Contact Me
+                </span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/yukesh-a-s/" target="_blank">
+              <div class="frame-3">
+                <img class="bxl-linkedin-svg-2" src="../assets/vectors/bxl_linkedin_svg_7_x2.svg" />
+              </div>
+            </a>
+            <a href="https://github.com/Yukesh0409" target="_blank">
+              <div class="frame-41">
+                <img class="vector-14" src="../assets/vectors/vector_20_x2.svg" />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="image">
+          <div class="potrait">
+          </div>
+        </div>
+      </div>
+      <div class="line-4">
+      </div>
+      <div class="frame-22">
+        <div class="frame-21">
+          <div class="featured-projects">
+          Featured Projects
+          </div>
+          <span class="project-desc">
+            Here are a few selected projects that highlight my diverse skills and interests.
+          </span>
+        </div>
+        <div class="projects">
+          <div class="project-2">
+            <div class="project-card">
+              <div class="card">
+                <div class="work">
+                </div>
+              </div>
+            </div>
+            <div class="project-content-2">
+              <div class="information-2">
+                <div class="title-and-description-2">
+                  <div class="title-11">
+                    MakeMyTrip Data Pipeline using PySpark
+                  </div>
+                  <span class="description-9">
+                    This project implements a data pipeline for extracting, transforming, and visualizing hotel data from the MakeMyTrip website. In this pipeline, Selenium is used to scrape hotel data from the MakeMyTrip website, Apache Spark is employed to process and transform the extracted hotel datasets, the processed data is stored in a PostgreSQL database, and lastly Plotly is used to create interactive data visualizations in Jupyter notebooks.
+                  </span>
+                </div>
+                <div class="project-info-2">
+                  <div class="title-12">
+                  Project Info
+                  </div>
+                  <div class="list-2">
+                    <div class="year-2">
+                      <span class="topic-6">
+                      Year
+                      </span>
+                      <span class="value">
+                      2024
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-24">
+                <a href="https://github.com/Yukesh0409/MakeMyTrip-Pipeline" target="_blank">
+                  <div class="view-project-1">
+                    <div class="title-and-arrow-1">
+                      <span class="title-1">
+                      See on Github
+                      </span>
+                      <div class="bxl-github-svg">
+                        <img class="vector-1" src="../assets/vectors/vector_x2.svg" />
+                      </div>
+                    </div>
+                    <div class="underline-1">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-image">
+              <div class="image-10">
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="information">
+                <div class="title-and-description">
+                  <div class="title-2">
+                  Food Ordering App Backend with Apache Kafka
+                  </div>
+                  <span class="description">
+                    This project presents a scalable backend system for a food ordering app, leveraging the power of Apache Kafka as a central event bus. Events, such as order placements and confirmations, are written to Kafka topics, facilitating real-time processing by different components like microservices, stream processing jobs, and Python modules.
+                  </span>
+                </div>
+                <div class="project-info">
+                  <div class="title-3">
+                  Project Info
+                  </div>
+                  <div class="list">
+                    <div class="year">
+                      <span class="topic-2">
+                      Year
+                      </span>
+                      <span class="value-3">
+                      2023
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="view-project-2">
+                <a href="https://github.com/Yukesh0409/Food-order-streaming-using-kafka" target="_blank">
+                  <div class="title-and-arrow-2">
+                    <span class="title-4">
+                    View project
+                    </span>
+                    <div class="arrow-1">
+                      <img class="vector-2" src="../assets/vectors/vector_6_x2.svg" />
+                    </div>
+                  </div>
+                </a>
+                <div class="underline-2">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-1">
+            <div class="project-image-1">
+              <div class="image-9">
+              </div>
+            </div>
+            <div class="project-content-1">
+              <div class="information-1">
+                <div class="title-and-description-1">
+                  <div class="title-5">
+                    Podcast Summary ETL with Airflow
+                  </div>
+                  <span class="description-1">
+                    This project presents an ETL (Extract, Transform, Load) pipeline designed to summarize podcast episodes using Apache Airflow, a robust open-source workflow orchestration platform. The workflow is tailored for SQLite3, providing a simple yet effective solution for managing podcast data.
+                  </span>
+                </div>
+                <div class="project-info-1">
+                  <div class="title-6">
+                  Project Info
+                  </div>
+                  <div class="list-1">
+                    <div class="year-1">
+                      <span class="topic-4">
+                      Year
+                      </span>
+                      <span class="value-5">
+                      2023
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-241">
+                <div class="view-project-4">
+                  <a href="https://github.com/Yukesh0409/Data-Pipeline-using-Airflow" target="_blank">
+                    <div class="title-and-arrow-4">
+                      <span class="title-8">
+                      See on Github
+                      </span>
+                      <div class="bxl-github-svg-1">
+                        <img class="vector-4" src="../assets/vectors/vector_17_x2.svg" />
+                      </div>
+                    </div>
+                  </a>
+                  <div class="underline-4">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line-5">
+      </div>
+      <div class="container">
+        <div class="about-me">
+        About me
+        </div>
+        <div class="frame-25">
+          <div class="my-oneliner">
+            I'm a data engineer with a background in Information Technology. 
+          </div>
+          <span class="my-desc">
+            I work as a data engineer at Chargebee, and I'm from Chennai. I'm skilled in Python and love working on data engineering. I'm also interested in web development and open to learning new tech tools. I use tools like Airflow, Spark, Kafka, and often work with Pandas for data migration. Outside of work, I enjoy playing video games like Valorant and cricket.
+          </span>
+        </div>
+      </div>
+      <div class="view-project-5">
+        <div class="title-10">
+            Click here
+        </div>
+        <div class="underline-6">
+        </div>
+        <!-- <div class="image-box">
+            <img src="../assets/images/more_about_me.png" alt="Image description">
+        </div> -->
+        <div class="image-box">
+          <a href="about.html">
+            <img src="../assets/images/more_about_me.png" alt="Image description">
+            <a href="about.html" class="hover-button">For more</a>
+          </a>
+        </div>
+        
+    </div>
+    <div class="line-6">
+    </div>
+    <div id="contact-details" class="frame-11">
+      <div class="frame-12">
+        <div class="frame-10">
+          <div class="frame-14">
+            <div class="lets-connect">
+            Let’s connect
+            </div>
+            <div class="frame-18">
+              <div class="frame-17">
+                <div class="description-2">
+                Say hello at
+                </div>
+                <div class="frame-19">
+                  <a href="mailto:asyukesh@gmail.com">
+                    <span class="mail">
+                      asyukesh@gmail.com
+                    </span>     
+                  </a>               
+                  <div class="underline-5">
+                  </div>
+                </div>
+              </div>
+              <div class="frame-16">
+                <div class="description-3">
+                For more info, here’s my
+                </div>
+                <div class="frame-20">
+                  <span class="description-4">
+                  resume
+                  </span>
+                  <div class="line-7">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-13">
+            <a href="https://www.linkedin.com/in/yukesh-a-s/" target="_blank">
+              <img class="bxl-linkedin-svg" src="../assets/vectors/bxl_linkedin_svg_1_x2.svg" />
+            </a>
+            <div class="bxl-github-svg-2">
+              <a href="https://github.com/Yukesh0409" target="_blank">
+                <img class="vector-7" src="../assets/vectors/vector_15_x2.svg" />
+              </a>
+            </div>
+            <div class="bxl-linkedin-svg-1">
+              <a href="https://x.com/Sedman0409" target="_blank">
+                <img class="vector-8" src="../assets/vectors/vector_7_x2.svg" />
+              </a>
+            </div>
+            <a href="https://www.instagram.com/yukesh0409/" target="_blank">
+              <img class="bxl-instagram-svg" src="../assets/vectors/bxl_instagram_svg_x2.svg" />
+            </a>
+          </div>
+        </div>
+        <span class="yukesh-as">
+        © 2024 Yukesh A S
+        </span>
+      </div>
+    </div>
+    <button onclick="scrollToTop()" id="back-to-top" class="appear-animation">&uarr;</button>
+  </body>
+</html>
